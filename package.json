@@ -1,26 +1,26 @@
 {
-  "name": "node-dice",
+  "name": "node_dice",
   "version": "1.0.0",
-  "description": "help you get started working with Node.js by hacking your way through creating a webserver from scratch.",
+  "description": "This assignment will help you learn to create an installable Node.js module package. You'll also provide a command line interface with it.",
   "main": "./lib/roll.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "roll-dice --sides=6 --dice=3 --rolls=5"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/comp426-2022-fall/a03-ziqian2.git"
   },
   "author": "ziqian2",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/comp426-2022-fall/a03-ziqian2/issues"
   },
   "homepage": "https://github.com/comp426-2022-fall/a03-ziqian2#readme",
-  "dependencies": {
-    "minimist": "^1.2.7"
-  },
   "bin": {
     "roll-dice": "./bin/cli.js"
   },
-  "type": "module"
+  "dependencies": {
+    "minimist": "^1.2.7"
+  }
 }
